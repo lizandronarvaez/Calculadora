@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <!-- Link al archivo CSS Externo -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Script de JS -->
+    <script src="main.js"></script>
+    
+</head>
+
+<body>
+    <div class="calculadora">
+        <div class="display">
+            <div class="display-display" id="display">
+                <input type="text" name="text" id="input-display">
+            </div>
+        </div>
+        <div class="numeros">
+            <button class="numero" id="button7" onclick="display_numeros(7)">7</button>
+
+            <button class="numero" id="button8" onclick="display_numeros(8)">8</button>
+
+            <button class="numero" id="button9" onclick="display_numeros(9)">9</button>
+
+            <button class="numero" id="button*" onclick="multiplica()">*</button>
+
+            <button class="numero" id="button4" onclick="display_numeros(4)">4</button>
+
+            <button class="numero" id="button5" onclick="display_numeros(5)">5</button>
+
+            <button class="numero" id="button6" onclick="display_numeros(6)">6</button>
+
+            <button class="numero" id="button/" onclick="divide()">/</button>
+
+            <button class="numero" id="button1" onclick="display_numeros(1)">1</button>
+
+            <button class="numero" id="button2" onclick="display_numeros(2)">2</button>
+
+            <button class="numero" id="button3" onclick="display_numeros(3)">3</button>
+
+            <button class="numero" id="button-" onclick="resta()">-</button>
+
+            <button class="numero" id="button0" onclick="display_numeros(0)">0</button>
+
+            <button class="numero" id="buttonAC" onclick="poner_a_cero()">AC</button>
+
+            <button class="numero" id="button=" onclick="resultado()">=</button>
+
+            <button class="numero" id="button+" onclick="suma()">+</button>
+
+        </div>
+    </div>
+
+    <script>
+        document.getElementById("input-display").value = 0;
+    </script>
+</body>
+
+</html>
