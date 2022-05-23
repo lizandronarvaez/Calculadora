@@ -61,6 +61,8 @@ function multiplica(){
 
 }
 
+//Funcion de divivir
+
 function divide(){
     if(Number(contador) !==0){
 
@@ -77,6 +79,7 @@ function divide(){
 
 }
 // Funcion del boton igual
+
 function resultado() {
 
     if (sumar) {
@@ -92,6 +95,8 @@ function resultado() {
     }
 
 }
+
+//Funcion de poner a 0
 
 function poner_a_cero() {
     document.getElementById("input-display").value = 0;
