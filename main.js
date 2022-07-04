@@ -7,14 +7,13 @@ let restar = false;
 let multiplicar=false;
 let didivir=false;
 
-// Este la de abajo es el script del display
+// Input donde se almacena los valores
 function display_numeros(numero) {
-
     document.getElementById("input-display").value = cifraVacia + numero;
     cifraVacia = document.getElementById("input-display").value;
 }
 
-// funcion de sumar
+// Funcion Sumar
 function suma() {
     contador = contador + Number(cifraVacia);
     document.getElementById("input-display").value = contador;
@@ -23,7 +22,7 @@ function suma() {
     p_operacion = false;
 
 }
-// Aqui debajo creamos la funcion restar
+//Funcion Resta
 function resta() {
     if (p_operacion == false) {
 
@@ -44,8 +43,8 @@ function resta() {
         restar = true;
     }
 }
-//Aqui creamos la funcion multiplicar
 
+//Funcionmultiplicar
 function multiplica(){
 
     if(Number(contador) !== 0){
@@ -64,10 +63,11 @@ function multiplica(){
 //Funcion de divivir
 
 function divide(){
-    if(Number(contador) !==0){
+    if(Number(contador) !== 0){
 
         contador=contador / Number(cifraVacia);
         cifraVacia=contador
+        
     }else{
         contador=Number(cifraVacia);
         cifraVacia="";
@@ -99,6 +99,5 @@ function resultado() {
 //Funcion de poner a 0
 
 function poner_a_cero() {
-    document.getElementById("input-display").value = 0;
-    cifraVacia =" ";
+    document.getElementById("input-display").value= cifraVacia;
 }
