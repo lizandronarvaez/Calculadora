@@ -1,5 +1,4 @@
-
-var cifraVacia = "";
+let cifraVacia = "";
 let contador = 0;
 let p_operacion = true;
 let sumar = false;
@@ -8,13 +7,13 @@ let multiplicar=false;
 let didivir=false;
 
 // Input donde se almacena los valores
-function display_numeros(numero) {
-    document.getElementById("input-display").value = cifraVacia + numero;
+function NumberDisplay(number) {
+    document.getElementById("input-display").value = cifraVacia + number;
     cifraVacia = document.getElementById("input-display").value;
 }
 
 // Funcion Sumar
-function suma() {
+function sumar() {
     contador = contador + Number(cifraVacia);
     document.getElementById("input-display").value = contador;
     cifraVacia = "";
@@ -23,7 +22,7 @@ function suma() {
 
 }
 //Funcion Resta
-function resta() {
+function restar() {
     if (p_operacion == false) {
 
         if (sumar) {
@@ -45,7 +44,7 @@ function resta() {
 }
 
 //Funcionmultiplicar
-function multiplica(){
+function multiplicar(){
 
     if(Number(contador) !== 0){
         contador=contador*Number(cifraVacia);
@@ -62,7 +61,7 @@ function multiplica(){
 
 //Funcion de divivir
 
-function divide(){
+function dividir(){
     if(Number(contador) !== 0){
 
         contador=contador / Number(cifraVacia);
@@ -78,8 +77,8 @@ function divide(){
     p_operacion=false;
 
 }
-// Funcion del boton igual
 
+// Funcion del boton igual
 function resultado() {
 
     if (sumar) {
@@ -98,6 +97,6 @@ function resultado() {
 
 //Funcion de poner a 0
 
-function poner_a_cero() {
-    document.getElementById("input-display").value= cifraVacia;
+function CountZero() {
+    document.getElementById("input-display").value= contador;
 }
