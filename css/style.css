@@ -1,0 +1,84 @@
+body {
+    box-sizing: border-box;
+    
+}
+
+/* Class Calculadora */
+
+.calculadora {
+    border: 1px solid black;
+    width: 500px;
+    height: 600px;
+    margin: 50px auto;
+    border-radius: 50px;
+    background: url(https://rockcontent.com/es/wp-content/uploads/sites/3/2020/07/beneficios-calculadora-interativa-para-saas-1024x576.png);
+    background-size: cover;
+    box-shadow: 0px 0px 50px 0px;
+
+}
+
+/* class display */
+.display {
+    /* border: 1px solid black; */
+    margin: 15px 25px;
+    height: 100px;
+    background-color: rgb(46, 44, 44);
+    border-radius: 50px;
+    color: white;
+}
+
+/* container del display donde se ven los numeros */
+/* .display-display {
+    border-radius: 0px 100px 50px 0px;
+    text-align: right;
+    background-color: rgb(46, 44, 44);
+    padding: 55px 20px 10px 0px;
+    margin: 25px 0px 0px 100px;
+    color: white;
+    font-size: 30px;
+
+} */
+
+/* Los numeros de la calculadora */
+.numeros {
+    /* border: 1px solid black; */
+    border-radius: 50px;
+    height: 425px;
+    width: 450px;
+    margin: 25px auto;
+    padding: 15px 0 5px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Item de los buttom */
+button {
+    color: white;
+    background: black;
+    font-size: 30px;
+    border-radius: 20%;
+    width: 95px;
+    height: 95px;
+    margin: 0px 7px;
+}
+
+button:active {
+    transform: scale(0.8);
+    transition: all 0.1s ease-in-out 0s;
+} 
+
+#input-display{
+    background-color: rgb(46, 44, 44);
+    color:white;
+    width: 275px;
+    height:30px ;
+    margin: 59px 0px 0px 140px;
+    border-radius: 0px 0px 15px 0px;
+    border: none;
+    text-align: right;
+    font-size: 30px;
+}
+#input-display:focus{
+  outline: none;
+}
